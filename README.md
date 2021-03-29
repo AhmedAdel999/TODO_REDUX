@@ -4,6 +4,8 @@ This application was made as practice on HTML, CSS, and JS, while also trying to
 
 # Known Bugs:
 
--Clicking on any of the filters(All, Active, and completed) doesn't work unless there is an action dispatched such as adding a todo.
+- Clicking on any of the filters(All, Active, and completed) doesn't work unless there is an action dispatched such as adding a todo.
 
-### Design assets are provided by frontendmentor.io https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW
+### Design assets are provided by frontendmentor.io
+
+https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW
