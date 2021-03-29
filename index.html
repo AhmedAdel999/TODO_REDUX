@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="dark-mode">
+    <div class="header"></div>
+    <div class="card">
+      <div class="card-header">
+        <h1>TODO</h1>
+        <img
+          id="dark-mode-toggle"
+          src="./images/icon-sun.svg"
+          alt="Dark Mode Toggle"
+        />
+      </div>
+      <div class="card-body">
+        <form class="add-todo card-item">
+          <div class="icon">
+            <div></div>
+          </div>
+          <input
+            class="input"
+            type="text"
+            autofocus
+            placeholder="Create a new todo..."
+          />
+        </form>
+        <ul class="todos"></ul>
+        <div class="card-footer">
+          <span class="items-left">No Items</span>
+          <div class="parent-filter">
+            <span class="all filter selected-filter" class="all">All</span>
+            <span class="active filter">Active</span>
+            <span class="completed filter">Completed</span>
+          </div>
+          <span class="clear-completed">Clear Completed</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
