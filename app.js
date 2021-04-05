@@ -203,9 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (selectedFilter === 'active') {
         if (!todo.completed) {
           string += `
-        <li id=${todo.id} class="todo card-item ${
-            todo.completed ? 'completed-todo' : ''
-          }">
+        <li id=${todo.id} class="todo card-item">
           <div class="icon">
             <div></div>
           </div>
@@ -216,11 +214,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         if (todo.completed) {
           string += `
-        <li id=${todo.id} class="todo card-item ${
-            todo.completed ? 'completed-todo' : ''
-          }">
+        <li id=${todo.id} class="todo card-item completed-todo">
           <div class="icon">
-            <div></div>
+            <div class="completed">
+              <img src="images/icon-check.svg"/>
+            </div>
           </div>
           ${todo.todo}
         </li>
